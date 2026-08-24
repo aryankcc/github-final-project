@@ -1,0 +1,62 @@
+theia@theia-axk220274:/home/project$ git clone https://github.com/aryankcc/mcino-Introduction-to-Git-and-GitHub.git
+Cloning into 'mcino-Introduction-to-Git-and-GitHub'...
+remote: Enumerating objects: 35, done.
+remote: Total 35 (delta 0), reused 0 (delta 0), pack-reused 35 (from 1)
+Receiving objects: 100% (35/35), 17.46 KiB | 17.46 MiB/s, done.
+Resolving deltas: 100% (6/6), done.
+theia@theia-axk220274:/home/project$ cd mcino-Introduction-to-Git-and-GitHub
+theia@theia-axk220274:/home/project/mcino-Introduction-to-Git-and-GitHub$
+ git checkout -c bug-fix-typo 
+Switched to a new branch 'bug-fix-typo'
+theia@theia-axk220274:/home/project/mcino-Introduction-to-Git-and-GitHub$
+ code README.md
+bash: code: command not found
+theia@theia-axk220274:/home/project/mcino-Introduction-to-Git-and-GitHub$
+ nano README.md
+theia@theia-axk220274:/home/project/mcino-Introduction-to-Git-and-GitHub$
+ nano README.md
+theia@theia-axk220274:/home/project/mcino-Introduction-to-Git-and-GitHub$
+ git status
+On branch bug-fix-typo
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+theia@theia-axk220274:/home/project/mcino-Introduction-to-Git-and-GitHub$
+ git add README.md
+theia@theia-axk220274:/home/project/mcino-Introduction-to-Git-and-GitHub$
+ git commit -m "Updated README with bug fix typo" 
+theia@theia-axk220274:/home/project/mcino-Introduction-to-Git-and-GitHub$
+ git push -u origin bug-fix-typo
+Username for 'https://github.com': aryankcc
+Password for 'https://aryankcc@github.com': 
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'bug-fix-typo' on GitHub by visiting:
+remote:      https://github.com/aryankcc/mcino-Introduction-to-Git-and-GitHub/pull/new/bug-fix-typo
+remote: 
+To https://github.com/aryankcc/mcino-Introduction-to-Git-and-GitHub.git
+ * [new branch]      bug-fix-typo -> bug-fix-typo
+Branch 'bug-fix-typo' set up to track remote branch 'bug-fix-typo' from 'origin'.
+theia@theia-axk220274:/home/project/mcino-Introduction-to-Git-and-GitHub$
+ git checkout main
+M       README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+theia@theia-axk220274:/home/project/mcino-Introduction-to-Git-and-GitHub$
+ git pull origin main
+From https://github.com/aryankcc/mcino-Introduction-to-Git-and-GitHub
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+theia@theia-axk220274:/home/project/mcino-Introduction-to-Git-and-GitHub$
+ git merge bug-fix-typo
+Already up to date.
+ git push origin main
+Username for 'https://github.com': aryankcc
+Password for 'https://aryankcc@github.com': 
+Everything up-to-date
+theia@theia-axk220274:/home/project/mcino-Introduction-to-Git-and-GitHub$
+
+ 
