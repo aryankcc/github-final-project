@@ -52,3 +52,26 @@ remote:
 To https://github.com/aryankcc/mcino-Introduction-to-Git-and-GitHub.git
  * [new branch]      bug-fix-revert -> bug-fix-revert
 Branch 'bug-fix-revert' set up to track remote branch 'bug-fix-revert' from 'origin'.
+
+theia@theia-axk220274:/home/project/mcino-Introduction-to-Git-and-GitHub$ git reset --hard HEAD
+HEAD is now at ad95b0a Create close_pr.yml
+
+theia@theia-axk220274:/home/project/mcino-Introduction-to-Git-and-GitHub$ git status
+On branch bug-fix-revert
+Your branch is up to date with 'origin/bug-fix-revert'.
+
+nothing to commit, working tree clean
+
+theia@theia-axk220274:/home/project/mcino-Introduction-to-Git-and-GitHub$ git revert d8324ad
+[bug-fix-revert <new-hash>] Revert "Update README.md"
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+theia@theia-axk220274:/home/project/mcino-Introduction-to-Git-and-GitHub$ grep "XYZ" README.md
+2022 XYZ, Inc.
+
+theia@theia-axk220274:/home/project/mcino-Introduction-to-Git-and-GitHub$ git push origin bug-fix-revert
+Enumerating objects: ...
+Counting objects: 100% (...)
+Writing objects: 100% (...)
+To https://github.com/aryankcc/mcino-Introduction-to-Git-and-GitHub.git
+   ad95b0a..<new-hash>  bug-fix-revert -> bug-fix-revert
